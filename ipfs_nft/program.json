@@ -1,0 +1,10 @@
+{
+        "program": "ipfs_nft.aleo",
+        "version": "0.0.0",
+        "description": "",
+        "development": {
+            "private_key": "APrivateKey1zkp22Lu2R8py88dUHNirhvjHEP1EEaq8v8rdhSAy6KJfmwb",
+            "address": "aleo1ssnhgr7y0eh9es42k2qc6aj503dems5cwjr8hxfd498nne6masqq79zarj"
+        },
+        "license": "MIT"
+    }
