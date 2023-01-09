@@ -10,6 +10,7 @@ Cargo.lock
 **/*.rs.bk
 
 /leo
+/aleo
 
 /hello/build
 /hello/outputs
