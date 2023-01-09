@@ -94,6 +94,14 @@ const getCIDFromParts = (bin1, bin2, bin3) => {
 }
 
 const CollectibleReducer = (owner, collection, id, cid) => {
+
+    // TODO: since we know the cid is base58, we can store it in a much smaller buffer.
+    // Add a lookup string and store the indexes
+    // Then instead of doing divide and mod by 256 above we only need to do 58
+    // We can also cut off the Qm below
+    // Also make it so other strings/names are 12 characters long and 5 bit like WAX
+    // i.e. The reason wax uses names that are only a-z 1-5 and . Is because that makes 32 characters which can be compressed into a lookup that is only 5 bits per character.
+
     const toBytes = Array.from(Buffer.from(cid, 'utf8'));
     const arr2uint128 = (arr) => {
         let sum = BigInt(arr[0]);
